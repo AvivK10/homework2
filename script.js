@@ -74,3 +74,17 @@ console.log(`The person has:${countProperties(person)} properties`);
 ///Task 8
 delete person.isStudent;
 console.log(person);
+
+///Task 9
+function hasProperty(obj, prop) {
+  for (let key in obj) {
+    if (key === prop) return true;
+    return false;
+  }
+  return false;
+}
+console.log(hasProperty(car, "make"));
+console.log(hasProperty(car, "name"));
+
+///Task 10
+function updatePerson(person, key, value) {}
