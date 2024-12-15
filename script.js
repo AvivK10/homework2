@@ -93,7 +93,7 @@ function updatePerson(person, key, value) {
   } else person.key = value;
 }
 
-console.log("before change:", person);
+console.log("Before change:", person);
 updatePerson(person, "age", 20);
 updatePerson(person, "city", "Haifa");
 console.log("After change: ", person);
