@@ -87,4 +87,13 @@ console.log(hasProperty(car, "make"));
 console.log(hasProperty(car, "name"));
 
 ///Task 10
-function updatePerson(person, key, value) {}
+function updatePerson(person, key, value) {
+  if (!hasProperty(person, key)) {
+    person[key] = value;
+  } else person.key = value;
+}
+
+console.log("before change:", person);
+updatePerson(person, "age", 20);
+updatePerson(person, "city", "Haifa");
+console.log("After change: ", person);
